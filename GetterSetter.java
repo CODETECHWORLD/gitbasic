@@ -42,10 +42,10 @@ public class GetterSetter{
         DefineGetterSetter dGS=new DefineGetterSetter(Name, age);
         AnotherObj anotherObj=new AnotherObj();
         anotherObj.m1();
-        /*GetterSetter GS=new GetterSetter();
+        GetterSetter GS=new GetterSetter();
         System.out.println("Name in Main method : "+ dGS.getName());
         System.out.println("Age in Method Block : "+ dGS.getAge());
-        GS.AccessGS(dGS.getName(),dGS.getAge());*/
+        GS.AccessGS(dGS.getName(),dGS.getAge());
         sc.close();
     }
 
