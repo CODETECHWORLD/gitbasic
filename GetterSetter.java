@@ -25,9 +25,11 @@ class DefineGetterSetter {
 }
 
 class AnotherObj{
-    DefineGetterSetter DGS=new DefineGetterSetter("pattu",age);
-    System.out.println("Name in AnotherObj class : "+ DGS.getName());
-    System.out.println("Age in AnotherObj class : "+ DGS.getAge());
+    public void m1(){
+        DefineGetterSetter DGS=new DefineGetterSetter("pattu",22);
+        System.out.println("Name in AnotherObj class : "+ DGS.getName());
+        System.out.println("Age in AnotherObj class : "+ DGS.getAge());
+    }
 }
 
 public class GetterSetter{
@@ -38,6 +40,8 @@ public class GetterSetter{
         System.out.println("Enter the age");
         int age=sc.nextInt();
         DefineGetterSetter dGS=new DefineGetterSetter(Name, age);
+        AnotherObj anotherObj=new AnotherObj();
+        anotherObj.m1();
         /*GetterSetter GS=new GetterSetter();
         System.out.println("Name in Main method : "+ dGS.getName());
         System.out.println("Age in Method Block : "+ dGS.getAge());
@@ -50,6 +54,3 @@ public class GetterSetter{
         System.out.println("Age in Method Block : "+ age);
     }
 }
-
-
-
