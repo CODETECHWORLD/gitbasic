@@ -2,19 +2,19 @@
 import java.util.Scanner;
 
 class DefineGetterSetter {
-    private String Name;
+    private String name;
     private int age;
 
     public DefineGetterSetter(String name, int age) {
-        Name = name;
+        this.name = name;
         this.age = age;
     }
 
     public String getName() {
-        return Name;
+        return name;
     }
     public void setName(String name) {
-        Name = name;
+        this.name = name;
     }
     public int getAge() {
         return age;
@@ -22,6 +22,12 @@ class DefineGetterSetter {
     public void setAge(int age) {
         this.age = age;
     }   
+}
+
+class AnotherObj{
+    DefineGetterSetter DGS=new DefineGetterSetter("pattu",age);
+    System.out.println("Name in AnotherObj class : "+ DGS.getName());
+    System.out.println("Age in AnotherObj class : "+ DGS.getAge());
 }
 
 public class GetterSetter{
@@ -32,10 +38,11 @@ public class GetterSetter{
         System.out.println("Enter the age");
         int age=sc.nextInt();
         DefineGetterSetter dGS=new DefineGetterSetter(Name, age);
-        GetterSetter GS=new GetterSetter();
+        /*GetterSetter GS=new GetterSetter();
         System.out.println("Name in Main method : "+ dGS.getName());
         System.out.println("Age in Method Block : "+ dGS.getAge());
-        // GS.AccessGS(dGS.getName(),dGS.getAge());
+        GS.AccessGS(dGS.getName(),dGS.getAge());*/
+        sc.close();
     }
 
     public void AccessGS(String name,int age){
@@ -43,4 +50,6 @@ public class GetterSetter{
         System.out.println("Age in Method Block : "+ age);
     }
 }
+
+
 
